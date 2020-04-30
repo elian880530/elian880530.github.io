@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.gramar {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}
+.kyewords {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #0000FF;
+}
+.Estilo5 {font-size: 12px; color: #000000; font-family: "Courier New", Courier, monospace;}
+-->
+</style>
+</head>
+
+<body>
+<span class="gramar"><strong>G:{ {S,A,B,C,D,I,N,K,Op}, {&lt;program&gt;, &lt;print&gt;, &lt;var&gt;, &lt;bin&gt;, &lt;id&gt;, &lt;begin&gt;, &lt;end&gt;, e, =, &quot;,&quot;, &quot;;&quot;, &amp;, -&gt;, &lt;-&gt;, !,&quot;|&quot;}, P, S}</strong><br />
+<br />
+<strong><span class="gramar">P:</strong><br />
+<strong>S -&gt; &lt;program&gt;<span class="Estilo5"> &lt;id&gt; </span><span class="gramar"> &lt;var&gt; B C</span></strong><br />
+<strong>A -&gt; , &lt;id&gt; A | e </strong><br />
+<strong>B -&gt; &lt;bin&gt; &lt;id&gt; A ; </strong><br />
+<strong>C -&gt; &lt;begin&gt; I K &lt;end&gt;</strong><br />
+<strong>K -&gt; &lt;print&gt; &lt;id&gt; ;</strong><br />
+<strong>I -&gt; &lt;id&gt;<span class="gramar"> = N ; |  </span>&lt;id&gt;<span class="gramar"> = D ; | </span>&lt;id&gt;<span class="gramar"> = D Op D ;</span></strong><br />
+<strong>D -&gt; ! &lt;id&gt;<span class="gramar"> | </span>&lt;id&gt;<span class="gramar"> </span></strong><br />
+<strong>N -&gt; 0 N | 1 N | 0 | 1</strong><br />
+<strong>Op -&gt; &amp; | &quot;|&quot; | &quot;-&gt;&quot; | &quot;&lt;-&gt;&quot;</strong><br />
+                 </span>
+</body>
+</html>

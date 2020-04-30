@@ -1,0 +1,271 @@
+<html>
+<head>
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: 'Arial';font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+<style type="text/css">
+div#container
+{
+	position:relative;
+	width: 1028px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;
+}
+body {text-align:center;margin:0}
+</style>
+  <script src="js/fecha.js">
+
+ </script>
+ <script>
+function cerrar(){
+
+	var cierre = confirm('Estas seguro que deseas cerrar la sesión',false);
+	if(cierre){
+		document.closeSesion.submit();
+	}else{
+		return;
+	}	
+}
+
+function cambiarContrasenna(a,n,c){
+	document.getElementById("anterior").value = a;
+	document.getElementById("nueva").value = n;
+	document.getElementById("confirmar").value = c;
+	document.cambiarPass.submit();	
+	}
+
+	function validar(n,u,g,c,s){
+		var letrasExp = new RegExp(/[^A-Za-z]+/);
+		var selloExp = new RegExp(/A-Za-z0-9/);
+
+		if(n==""){
+			document.getElementById('text10').innerHTML = '* Nombre requerido';
+			return;
+		}
+		if(n.match(letrasExp)){
+			document.getElementById('text10').innerHTML = '* Solo letras';
+			return;
+		}
+		if(n.match(/[A-Za-z]/)){
+			document.getElementById('text10').innerHTML = '';
+		}
+
+		if(u==""){
+			document.getElementById('text11').innerHTML = '* Usuario requerido';
+			return;
+		}
+		if(u.match(letrasExp)){
+			document.getElementById('text11').innerHTML = '* Solo letras';
+			return;
+		}
+		if(u.match(/[A-Za-z]/)){
+			document.getElementById('text11').innerHTML = '';
+		}
+		if(g==0){
+			document.getElementById('text12').innerHTML = '* Debe escoger un grado';
+			return;
+		}else{
+			document.getElementById('text12').innerHTML = '';
+		}
+		if(c==0){
+			document.getElementById('text13').innerHTML = '* Debe escoger un cargo';
+			return;
+		}else{
+			document.getElementById('text13').innerHTML = '';
+		}
+		if(s.length < 7){
+			document.getElementById('text14').innerHTML = '* Mínimo 7 caracteres';
+			return;
+		}else{
+			document.getElementById('text14').innerHTML = '';
+		}
+		document.adicionarOficial.submit();	
+	}
+
+		function cambiar_contraseña(a,n,c){
+			window.open("changePass.html","new","width=260,height=135,menubar=no,top=250,left=390,menubar=no,scrollbars=no,toolbar=no,location=no,directories=no,resizable=no");
+		}
+		
+ </script>
+</head>
+
+<body  link="#606060" vlink="#606060" alink="#606060">
+
+
+<% if (request.getSession().getAttribute("usuario") == null){
+	response.sendRedirect("index.jsp");
+	return;
+} %>
+
+<div style="position: absolute;left: 735px;top: 28px;z-index: 48"><a href="MostrarTodosOficiales.jsp">Trazas</a></div>
+
+
+<div style="position: absolute;left: 450px;top: 28px;z-index: 45">Bienvenido:</div><div style="position: absolute;left: 519px;top:28px;z-index: 48"><%=request.getSession().getAttribute("usuario")%></div>
+
+<div style="position: absolute;left: 190px;top: 25px;z-index: 47"><a href="javascript:cambiar_contraseña()"><b>Cambiar contraseña:</b></a></div>
+<div style="position: absolute;visibility: hidden;">
+<form name="cambiarPass" action="cambiarPass" method="post">
+<input type="text" name="anterior" id="anterior">
+<input type="text" name="nueva" id="nueva">
+<input type="text" name="confirmar" id="confirmar">
+</form>
+</div>
+<form name='closeSesion' action="closeSesion" method="post">
+</form>
+<div id="container">
+<div id="image1" style="position:absolute; overflow:hidden; left:175px; top:39px; width:678px; height:120px; z-index:0"><img src="images/img18421203.JPG" alt="" border=0 width=678 height=120></div>
+
+<div id="roundrect1" style="position:absolute; overflow:hidden; left:204px; top:50px; width:621px; height:98px; z-index:1"><img border=0 width="100%" height="100%" alt="" src="images/roundrect15438828.gif"></div>
+
+<div id="image7" style="position:absolute; overflow:hidden; left:176px; top:157px; width:677px; height:400px; z-index:2"><img src="images/middle_line.jpg" alt="" border=0 width=677 height=400></div>
+
+<div id="image6" style="position:absolute; overflow:hidden; left:176px; top:556px; width:677px; height:33px; z-index:3"><img src="images/bottom102.jpg" alt="" border=0 width=677 height=33></div>
+
+<div id="hr1" style="position:absolute; overflow:hidden; left:185px; top:162px; width:661px; height:56px; z-index:4">
+<hr size=2 width=661 color="#E0E0E0">
+</div>
+
+<div id="hr3" style="position:absolute; overflow:hidden; left:192px; top:200px; width:645px; height:16px; z-index:5">
+<hr size=2 width=645 color="#C0C0C0">
+</div>
+
+<div id="shape1" style="position:absolute; overflow:hidden; left:194px; top:188px; width:643px; height:19px; z-index:6; background-image:url(images/dot.gif)"></div>
+
+<div id="text3" style="position:absolute; overflow:hidden; left:392px; top:563px; width:306px; height:20px; z-index:7"><div class="wpmd">
+<div><font class="ws8" face="Tahoma">2010 Design By L3@Corporation. All Rights Reserved.</font></div>
+</div></div>
+
+<div id="text2" style="position:absolute; overflow:hidden; left:464px; top:223px; width:127px; height:18px; z-index:8"><div class="wpmd">
+<div><font color="#808080"><B>Insertar oficial</B></font></div>
+</div></div>
+
+<div id="image4" style="position:absolute; overflow:hidden; left:176px; top:20px; width:677px; height:20px; z-index:9"><img src="images/img14439093.jpg" alt="" border=0 width=677 height=20></div>
+
+<div id="roundrect2" style="position:absolute; overflow:hidden; left:294px; top:57px; width:28px; height:25px; z-index:10"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18536390.gif"></div>
+
+<div id="roundrect3" style="position:absolute; overflow:hidden; left:276px; top:85px; width:15px; height:16px; z-index:11"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18567671.gif"></div>
+
+<div id="roundrect5" style="position:absolute; overflow:hidden; left:244px; top:113px; width:25px; height:21px; z-index:12"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18582640.gif"></div>
+
+<div id="roundrect6" style="position:absolute; overflow:hidden; left:277px; top:117px; width:15px; height:15px; z-index:13"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18590609.gif"></div>
+
+<div id="roundrect8" style="position:absolute; overflow:hidden; left:335px; top:63px; width:17px; height:16px; z-index:14"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18612015.gif"></div>
+
+<div id="roundrect7" style="position:absolute; overflow:hidden; left:330px; top:86px; width:24px; height:17px; z-index:15"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18606015.gif"></div>
+
+<div id="roundrect9" style="position:absolute; overflow:hidden; left:321px; top:113px; width:28px; height:25px; z-index:16"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18633609.gif"></div>
+
+<div id="roundrect4" style="position:absolute; overflow:hidden; left:297px; top:98px; width:21px; height:18px; z-index:17"><img border=0 width="100%" height="100%" alt="" src="images/roundrect18573718.gif"></div>
+
+<div id="text4" style="position:absolute; overflow:hidden; left:556px; top:88px; width:266px; height:17px; z-index:18"><div class="ws12">
+<div id='div'>Miércoles, 31 de Diciembre de 2010</div>
+</div></div>
+
+<div id="text10" style="position:absolute;color:#F00000; overflow:hidden; left:624px; top:272px; width:164px; height:20px;z-index:19"><div class="wpmd">
+<div><font class="ws11" face="Arial"></font></div>
+</div></div>
+
+<div id="text11" style="position:absolute;color:#F00000; overflow:hidden; left:624px; top:306px; width:164px; height:20px; z-index:20"><div class="wpmd">
+<div><font class="ws11" face="Arial"></font></div>
+</div></div>
+
+<div id="text12" style="position:absolute;color:#F00000; overflow:hidden; left:624px; top:342px; width:164px; height:20px; z-index:21"><div class="wpmd">
+<div><font class="ws11" face="Arial"></font></div>
+</div></div>
+
+<div id="text13" style="position:absolute;color:#F00000; overflow:hidden; left:624px; top:378px; width:164px; height:20px; z-index:22"><div class="wpmd">
+<div><font class="ws11" face="Arial"></font></div>
+</div></div>
+
+<div id="text14" style="position:absolute;color:#F00000; overflow:hidden; left:624px; top:412px; width:164px; height:20px; z-index:23"><div class="wpmd">
+<div><font class="ws11" face="Arial"></font></div>
+</div></div>
+
+<div id="image2" style="position:absolute; overflow:hidden; left:515px; top:80px; width:32px; height:32px; z-index:24"><img src="images/img21750515.JPG" alt="" border=0 width=32 height=32></div>
+
+<div id="roundrect10" style="position:absolute; overflow:hidden; left:387px; top:254px; width:235px; height:240px; z-index:25"><img border=0 width="100%" height="100%" alt="" src="images/roundrect22493859.gif"></div>
+
+<div id="text5" style="position:absolute; overflow:hidden; left:405px; top:272px; width:49px; height:16px; z-index:26"><div class="wpmd">
+<div>Nombre:</div>
+</div></div>
+
+<div id="text6" style="position:absolute; overflow:hidden; left:405px; top:308px; width:51px; height:17px; z-index:27"><div class="wpmd">
+<div>Usuario:</div>
+</div></div>
+
+<div id="text7" style="position:absolute; overflow:hidden; left:415px; top:343px; width:41px; height:17px; z-index:28"><div class="wpmd">
+<div>Grado:</div>
+</div></div>
+
+<div id="text8" style="position:absolute; overflow:hidden; left:415px; top:377px; width:41px; height:18px; z-index:29"><div class="wpmd">
+<div>Cargo:</div>
+</div></div>
+
+<div id="text9" style="position:absolute; overflow:hidden; left:419px; top:412px; width:34px; height:17px; z-index:30"><div class="wpmd">
+<div>Sello:</div>
+</div></div>
+<form name='adicionarOficial' action="adicionarOficial" method="post">
+<input name="nombre" type="text" style="position:absolute;width:153px;left:456px;top:270px;z-index:31">
+<input name="usuario" type="text" style="position:absolute;width:153px;left:456px;top:305px;z-index:32">
+<select name="grados" style="position:absolute;left:457px;top:340px;width:154px;z-index:33">
+<option value="[........Seleccione.........]">[........Seleccione.........]</option>
+<option value="Teniente">Teniente</option>
+<option value="Capitán">Capitán</option>
+<option value="Mayor">Mayor</option>
+<option value="Coronel">Coronel</option>
+</select>
+
+<select name="cargos" style="position:absolute;left:457px;top:375px;width:154px;z-index:34">
+<option value="[........Seleccione.........]">[........Seleccione.........]</option>
+<option value="Tercio">Tercio</option>
+<option value="Oficial de guardia">Oficial de guardia</option>
+<option value="Ayudante OG">Ayudante OG</option>
+</select>
+
+<input name="sello" type="password" style="position:absolute;width:153px;left:458px;top:410px;z-index:35">
+<input name="Insertar" type="button" onclick="validar(nombre.value,usuario.value,grados.selectedIndex,cargos.selectedIndex,sello.value)" value="Insertar" style="position:absolute;left:533px;top:451px;z-index:36">
+<input name="cancelar" type="reset" value="Cancelar" style="position:absolute;left:419px;top:451px;z-index:37">
+</form>
+<div id="text15" style="position:absolute; overflow:hidden; left:261px; top:183px; width:530px; height:19px; z-index:38"><div class="wpmd">
+<div><font face="Arial"><B><a href="index.jsp" title="">Inicio</a></B></font><font color="#5B5B5B" face="Arial"><B>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; </B></font><font face="Arial"><B><a href="Insertar oficial.jsp" title="">Insertar oficial</a></B></font><font color="#5B5B5B" face="Arial"><B>&nbsp;&nbsp;&nbsp; |&nbsp; </B></font><font face="Arial"><B><a href="Insertar arma.jsp" title="">Insertar arma</a></B></font><font color="#5B5B5B" face="Arial"><B>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; </B></font><font face="Arial"><B><a href="Entregar arma.jsp" title="">Entregar arma</a></B></font><font color="#5B5B5B" face="Arial"><B>&nbsp;&nbsp; |&nbsp; </B></font><font face="Arial"><B><a href="Mostrar registro.jsp" title="">Mostrar registro</a></B></font></div>
+</div></div>
+
+<div id="text1" style="position:absolute; overflow:hidden; left:779px; top:25px; width:48px; height:17px; z-index:39"><div class="wpmd">
+<div><font class="ws11" color="#646464" face="Arial">[ <a href="javascript:cerrar()">Salir<a/> ]</font></div>
+</div></div>
+
+<div id="image3" style="position:absolute; overflow:hidden; left:827px; top:23px; width:22px; height:22px; z-index:40"><img src="images/img24688281.png" alt="" border=0 width=22 height=22></div>
+
+<div id="image5" style="position:absolute; overflow:hidden; left:827px; top:23px; width:22px; height:22px; z-index:41"><img src="images/img24688281.png" alt="" border=0 width=22 height=22></div>
+
+
+</div></body>
+</html>

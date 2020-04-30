@@ -1,0 +1,7 @@
+program Ejemplo;
+var
+	x: int;
+	y: float;
+begin
+	read x;
+end

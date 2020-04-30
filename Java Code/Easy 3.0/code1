@@ -1,0 +1,8 @@
+program program1;
+var 
+  x, as2 :int;
+begin   
+  while x >= 0 do
+        x = x + 1;
+  x = as2; 
+end

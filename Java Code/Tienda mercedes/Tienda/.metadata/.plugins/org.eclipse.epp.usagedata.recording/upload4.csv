@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,com.collabnet.subversion.merge,1.9.0.4,"com.collabnet.subversion.merge",1256590917265
+started,bundle,org.springframework.ide.eclipse.aop.core,2.2.1.v200811281800,"org.springframework.ide.eclipse.aop.core",1256590917281
+started,bundle,org.springframework.ide.eclipse.aop.ui,2.2.1.v200811281800,"org.springframework.ide.eclipse.aop.ui",1256590917312
+started,bundle,org.springframework.ide.eclipse.beans.core,2.2.1.v200811281800,"org.springframework.ide.eclipse.beans.core",1256590917359
+started,bundle,org.springframework.ide.eclipse.beans.ui,2.2.1.v200811281800,"org.springframework.ide.eclipse.beans.ui",1256590917390
+started,bundle,org.springframework.ide.eclipse.core,2.2.1.v200811281800,"org.springframework.ide.eclipse.core",1256590917406
+started,bundle,org.springframework.ide.eclipse.javaconfig.ui,2.2.1.v200811281800,"org.springframework.ide.eclipse.javaconfig.ui",1256590917421
+started,bundle,org.springframework.ide.eclipse.ui,2.2.1.v200811281800,"org.springframework.ide.eclipse.ui",1256590917437
+started,bundle,org.tigris.subversion.clientadapter,1.6.0.2,"org.tigris.subversion.clientadapter",1256590917468
+started,bundle,org.tigris.subversion.subclipse.core,1.6.2,"org.tigris.subversion.subclipse.core",1256590917468
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.2,"org.tigris.subversion.subclipse.ui",1256590917484
+os,sysinfo,,,"win32",1256590917484
+arch,sysinfo,,,"x86",1256590917484
+ws,sysinfo,,,"win32",1256590917484
+locale,sysinfo,,,"es_ES",1256590917484
+processors,sysinfo,,,"2",1256590917484
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1256590917484
+java.runtime.version,sysinfo,,,"1.6.0_03-b05",1256590917484
+java.specification.name,sysinfo,,,"Java Platform API Specification",1256590917484
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1256590917484
+java.specification.version,sysinfo,,,"1.6",1256590917484
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1256590917484
+java.version,sysinfo,,,"1.6.0_03",1256590917484
+java.vm.info,sysinfo,,,"mixed mode",1256590917484
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1256590917484

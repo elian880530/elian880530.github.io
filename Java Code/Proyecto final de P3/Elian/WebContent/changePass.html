@@ -1,0 +1,83 @@
+<html> 
+<head> 
+<title>Cambiar contraseña:</title> <script> 
+
+
+function validar(a,n,c){
+	if(a==""){
+		document.getElementById("anterior").style.background = "#FFFFEC";
+		return;
+	}else{
+		document.getElementById("anterior").style.background = "#ffffff";
+	}
+	if(n==""){
+		document.getElementById("nueva").style.background = "#FFFFEC";
+		return;
+	}else{
+		document.getElementById("nueva").style.background = "#FFFFFF";
+	}
+	if(c==""){
+		document.getElementById("confirmar").style.background = "#FFFFEC";
+		return;
+	}else{
+		document.getElementById("confirmar").style.background = "#FFFFFF";
+	}
+	if(n!=c){
+		document.getElementById("nueva").style.background = "#FFFFEC";
+		document.getElementById("confirmar").style.background = "#FFFFEC";
+	}
+	document.getElementById("formulario").style.visibility = "hidden";
+	document.getElementById("imagenDownload").style.visibility = "visible";
+
+	cambiarContra(a,n,c);
+	
+}
+
+function cambiarContra(a,n,c){
+window.opener.cambiarContrasenna(a,n,c);
+window.close();
+} 
+</script> 
+</head> 
+
+<body>
+
+<div id="imagenDownload" style="position: absolute;visibility:hidden;left: 98px;top: 25px"><img src="images\download.gif"></div>
+ <div id="formulario">
+ 
+<div id="procesando" style="position: absolute;"></div>
+
+<form name="cambiarContra" action="cambiarContra" method="post">
+<table border='0'>
+<tr><td align="center">
+Anterior:
+</td>
+<td> 
+<input id="anterior" type="password" name='usuario' value=''>
+</td>
+</tr>
+<tr><td align="center">
+Nueva:
+</td>
+<td>
+<input id="nueva" type='password' name='password' value=''>
+</td>
+</tr>
+<tr><td align="center">
+Confirmar:
+</td>
+<td>
+<input id="confirmar" type="password" name='rpassword' value=''>
+</td>
+</tr>
+<tr>
+<td></td>
+<td rowspan="2" align="center">
+<input type="button" value="Cambiar" onclick="validar(usuario.value,password.value,rpassword.value)"> 
+</td>
+</tr>
+</table>
+</form>
+</div> 
+</body> 
+</html> 

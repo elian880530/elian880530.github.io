@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Indicaciones"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="246" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="552" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="351" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Indicaciones generales:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value=" Para realizar los ejercicios hemos creado una estructura de clases y m&#xe9;todos implementados  que&#xa;pueden ser utilizados por usted. Estudie la aplicaci&#xf3;n detenidamente antes de comenzar.  &#xa;&#xa;Est&#xe1;n implementados varios m&#xe9;todos importantes que pueden ser de su utilidad.  En cada&#xa;ejercicio le daremos una referencia al principio de cada ActionPerformed, que usted tiene que &#xa;implementar,  a la clase JTreeVisual, la cual contiene entre otros los m&#xe9;todos:      &#xa;&#xa;public IArbolBinario&lt;String&gt; getArbol(); // Devuelve el &#xe1;rbol ra&#xed;z de todos los sub&#xe1;rboles.    &#xa;&#xa;public IArbolBinario&lt;String&gt; getArbolActual(); // Devuelve el sub&#xe1;rbol actual que estamos viendo &#xa;                                                                           // en la aplicaci&#xf3;n.     &#xa;&#xa;Estos m&#xe9;todos son los que com&#xfa;nmente van a ser utilizados por usted. Obteniendo un &#xe1;rbol o &#xa;sub&#xe1;rbol (que es tambi&#xe9;n un &#xe1;rbol). Entonces se puede aplicar cualquiera de los m&#xe9;todos del TDA &#xa;&#xe1;rbol ya visto en conferencia y clase pr&#xe1;ctica.&#xa;&#xa;Nota aclaratoria, para todos los ejercicios: &#xa;&#xa;En caso de no encontrar lo especificado, se deber&#xe1; devolver en los jLabelResultado el String &#xa;&#x201c;No encontrado&#x201d;. "/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Aceptar"/>
+        <Property name="toolTipText" type="java.lang.String" value="&#xa;Para realizar los ejercicios hemos creado una estructura de clases y m&#xe9;todos implementados &#xa;que pueden ser utilizados por usted. Estudie la aplicaci&#xf3;n detenidamente antes de comenzar. &#xa;&#xa;Est&#xe1;n implementados varios m&#xe9;todos importantes que pueden ser de su utilidad.  En cada ejercicio&#xa;le daremos una referencia al principio de cada ActionPerformed, que usted tiene que implementar, &#xa;a la clase JTreeVisual, la cual contiene entre otros los m&#xe9;todos:    &#xa;&#xa;&#xa;public IArbolBinario&lt;String&gt; getArbol(); // Devuelve el &#xe1;rbol ra&#xed;z de todos los sub&#xe1;rboles.  &#xa;&#xa;public IArbolBinario&lt;String&gt; getArbolActual(); // Devuelve el sub&#xe1;rbol actual que estamos viendo en la&#xa;                                                                                  // aplicaci&#xf3;n.  &#xa;&#xa;&#xa;Estos m&#xe9;todos son los que com&#xfa;nmente van a ser utilizados por usted. Obteniendo un &#xe1;rbol o&#xa;sub&#xe1;rbol (que es tambi&#xe9;n un &#xe1;rbol). Entonces se puede aplicar cualquiera de los m&#xe9;todos del TDA &#xa;&#xe1;rbol ya visto en conferencia y clase pr&#xe1;ctica.  Nota aclaratoria, para todos los ejercicios: En caso de&#xa;no encontrar lo especificado, se deber&#xe1; devolver en los jLabelResultado el String &#x201c;No encontrado&#x201d;. "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

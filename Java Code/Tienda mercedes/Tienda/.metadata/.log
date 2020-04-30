@@ -1,0 +1,148 @@
+!SESSION 2009-10-26 14:01:06.343 -----------------------------------------------
+eclipse.buildId=I20090611-1540
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2009-10-26 14:01:07.625
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2009-10-26 14:01:10.437
+!MESSAGE The installable unit org.eclipse.persistence.jpa.equinox.weaving.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2009-10-26 14:01:10.437
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2009-10-26 14:01:10.625
+!MESSAGE The installable unit org.eclipse.persistence.jpa.equinox.weaving.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2009-10-26 14:01:10.625
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.ajdt.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.ajdt.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.aop.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.aop.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.autowire.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.autowire.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.javaconfig.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.javaconfig.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.mylyn.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.mylyn.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.osgi.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.046
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.osgi.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.062
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.security.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.062
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.security.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.062
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.webflow.feature.source_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.062
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\spring-ide\eclipse\features\org.springframework.ide.eclipse.webflow.feature_2.2.1.v200811281800.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\springsourceApTools\eclipse\features\com.springsource.platform.ide.feature.source_1.0.0.v200805040702.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\springsourceApTools\eclipse\features\com.springsource.platform.ide.feature_1.0.0.v200805040702.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\com.collabnet.subversion.merge.feature_1.9.0.4.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\com.sun.jna_3.0.9.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.clientadapter.feature_1.6.0.2.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.6.3.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.140
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.6.2.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.156
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.0.7.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.156
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.156
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tigris.subversion.subclipse_1.6.2.jar
+
+!ENTRY org.eclipse.update.configurator 4 0 2009-10-26 14:01:18.156
+!MESSAGE Unable to find feature.xml in directory: D:\Programas\Eclipse 3.5 JEE GALILEO\eclipse\..\plugins\Subclipse\eclipse\features\org.tmatesoft.svnkit_1.3.0.5847.jar
+
+!ENTRY org.eclipse.osgi 2 0 2009-10-26 14:03:16.093
+!MESSAGE While loading class "org.eclipse.rse.ui.SystemPreferencesManager$ModelChangeListener", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.rse.ui_3.1.0.v200905272300 [529]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.rse.ui.SystemPreferencesManager$ModelChangeListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.rse.ui_3.1.0.v200905272300.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:376)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:452)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:405)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.rse.ui.SystemPreferencesManager$1.run(SystemPreferencesManager.java:510)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 15 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:376)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:452)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:405)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at org.eclipse.rse.ui.SystemPreferencesManager$1.run(SystemPreferencesManager.java:510)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

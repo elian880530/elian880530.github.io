@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>new</title>
+<!-- TemplateEndEditable --><link rel="stylesheet" href="file:///D|/Elian/Trabajos/plantillas%20web/Plantillas%20descargas/blackandblues/blackandblues/1.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="coollew - http://www.opendesigns.org/profile/?user=coollew" />
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+.Estilo1 {
+	color: #0066FF;
+	font-weight: bold;
+	font-style: italic;
+}
+.Estilo2 {color: #fff}
+-->
+</style>
+</head>
+<body>
+<div id="parent">
+<div id="outer">      
+<img src="banner%20del%20curso.JPG" width="939" height="186" /><!-- TemplateBeginEditable name="EditRegion3" -->
+<ul class="menu black">
+  <li class="Estilo2"><a href="file:///D|/Elian/Trabajos/plantillas%20web/Plantillas%20descargas/blackandblues/blackandblues/index.html" class="Estilo2">Carros</a></li>
+  <li><a href="#" class="current">Principal</a></li>
+  <li><a href="#" class="current">Clientes</a></li>
+  <li><a href="#" class="current">Vendedor</a></li>
+  <li><a href="#">Informaci&oacute;n</a></li>
+  <li><a href="#">Ventas</a></li>  
+</ul>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="EditRegion2" -->
+<div id="leftcolumn"> <img class="left" src="file:///D|/Elian/Trabajos/plantillas%20web/Plantillas%20descargas/blackandblues/blackandblues/picks/2.jpg" alt="#" />
+    <h2>Delta Blues</h2>
+    <p> Perhaps the most influential of the many styles of blues music, Mississippi Delta blues rose out of the fertile agricultural triangle located between Vicksburg Mississippi and Memphis Tennessee bordered by the Mississippi River to the west and the Yazoo River to the east. In this where cotton was the primary cash crop, much of the property was owned by white plantation owners and worked by black sharecroppers. <a href="#">More......</a> </p>
+    <blockquote>
+      <div id="endquote"> An acoustic guitar is the instrument of choice in playing Delta blues, although several artists adopted the Dobro for its louder sound. The harmonica is also widely used as a secondary instrument. </div>
+    </blockquote>
+    <h2>Delta Blues Tradition</h2>
+    <p> Traditional blues songs were handed down by word-of-mouth from one performer to another, and many times an artist would add new lyrics to an old song and make it their own. The guitar and the harmonica were the primary tool of the Delta bluesman, mostly due to the ease of carrying them around, and many of the musicians of the Early Blues era (1910-1950) were sharecroppers, or worked on one of the many plantations that were located across the Mississippi Delta. <a href="#">More......</a> </p>
+    <h4>This Template is Free</h4>
+    <p>. Coeded in Notepad valid xhtml 1.0 strict and css</p>
+    <p>. no conditional comments no hacks</p>
+    <p>. no links no promo's</p>
+    <p>I hope it proves usefull</p>
+</div>
+<!-- TemplateEndEditable -->
+<!-- End left Column -->
+<!-- TemplateBeginEditable name="EditRegion1" -->
+<div id="rightcolumn">
+  <h3>Charley Patton </h3>
+  <img class="right" src="file:///D|/Elian/Trabajos/plantillas%20web/Plantillas%20descargas/blackandblues/blackandblues/picks/3.jpg" alt="#" />
+  <p> Considered to be the first Delta blues star often with fellow bluesman Son House, Ishman Bracey, Tommy Johnson, Willie Brown, Tommy McClennan, and Skip James are generally considered to be the most creative and influential of the Delta blues artists. </p>
+  <h3>Chicago Blues</h3>
+  <p> Muddy Waters, Howlin' Wolf, and John Lee Hooker all came out of the Mississippi Delta.Delta blues artists would prove to be a major influence on the British blues-rock boom of the 1960s. </p>
+</div>
+<!-- TemplateEndEditable -->
+<!-- End Right Column -->
+<div id="footer">
+</div>			 		 
+</div>
+<!-- End outer -->
+</div>
+<!-- End parent -->
+</body>
+</html>

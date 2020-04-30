@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/Templates/plantilla.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>new</title>
+<!-- InstanceEndEditable --><link rel="stylesheet" href="file:///D|/Elian/Trabajos/plantillas%20web/Plantillas%20descargas/blackandblues/blackandblues/1.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="coollew - http://www.opendesigns.org/profile/?user=coollew" />
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.Estilo3 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+</style>
+<script>
+function validarTexto(){
+var error = false
+var variable  = document.form1.textfield.value
+var variable1 = document.form1.textfield2.value
+var variable2 = document.form1.textfield3.value
+var variable3 = document.form1.textfield4.value
+
+
+var patron3 = (/^[0-9]{7}$/)
+var patron1 = (/^[A-Za-z]{1,}$/)
+var patron2 = (/^[0-9]{1,}$/)
+
+if(variable.match(patron1)){
+}else{
+alert('El nombre deve contener letras únicamente')
+error = true
+}
+if(variable1.match(patron1)){
+}else{
+alert('El primer apellido deve contener letras únicamente')
+error = true
+}
+if(variable2.match(patron1)){
+}else{
+alert('El segundo apellido deve contener letras únicamente')
+error = true
+}
+if(variable3.match(patron3)){
+}else{
+alert('El solapín deve contener 7 números únicamente')
+error = true
+}
+if(!error)
+document.form1.submit();
+return
+}
+</script>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Estilo1 {
+	color: #0066FF;
+	font-weight: bold;
+	font-style: italic;
+}
+.Estilo2 {color: #fff}
+-->
+</style>
+</head>
+<body>
+<div id="parent">
+<div id="outer">      
+<img src="omagenes\banner del curso.JPG" width="728" height="186" /><!-- InstanceBeginEditable name="EditRegion3" -->
+<ul class="menu black">
+  <li class="Estilo2"><a href="pagina2.htm" target="">Carros</a></li>
+  <li><a href="index.htm">Principal</a></li>
+  <li><a href="pagina3.htm" target="">Clientes</a></li>
+  <li><a href="pagina4.htm" target="">Vendedor</a></li>
+  <li><a href="pagina5.jsp">Información</a></li>
+  <li><a href="paginaVenta.jsp">Ventas</a></li>  
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditRegion2" -->
+<div id="leftcolumn">
+  <h2><img src="omagenes/gold-mercedes-benz-c63-amg-2-1e7ep-52%20oro.jpg" width="522" height="502" /> </h2>
+    <p>&nbsp; </p>
+    </div>
+<!-- InstanceEndEditable -->
+<!-- End left Column -->
+<!-- InstanceBeginEditable name="EditRegion1" -->
+<div id="rightcolumn">
+  <h3>Registro del Vendedor </h3>
+  
+  <form name="form1" id="form1" method="post" action="insertarVendedor">
+    <p>
+      <center class="Estilo3">
+        Nombre
+      </center>
+    </p>
+    <p>
+      <center>
+        <input type="text" name="textfield" value="" />
+      </center>
+    </p>
+    <p>
+      <center class="Estilo3">
+        <strong>        Primer Apellido
+        </strong>
+      </center>
+    </p>
+    <p>
+      <center>
+        <input type="text" name="textfield2" value=""/>
+      </center>
+    </p>
+    <p>
+      <center class="Estilo3">
+        Segundo Apellido
+      </center>
+    </p>
+    <p>
+      <center>
+        <input type="text" name="textfield3" value=""/>
+      </center>
+    </p>
+    <p>
+      <center class="Estilo3">
+        Solap&iacute;n
+      </center>
+    </p>
+    <p>
+      <center>
+        <input type="text" name="textfield4" value=""/>
+      </center>
+    </p>
+    <p>
+      <center>
+        <input type="button" name="Submit" value="Enviar" onclick="validarTexto()" />
+      </center>
+    </p>
+    <p>&nbsp;</p>
+  </form>
+  <p>&nbsp;</p>
+  </div>
+<!-- InstanceEndEditable -->
+<!-- End Right Column -->
+<div id="footer">
+</div>			 		 
+</div>
+<!-- End outer -->
+</div>
+<!-- End parent -->
+</body>
+<!-- InstanceEnd --></html>
