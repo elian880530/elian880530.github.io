@@ -1,0 +1,184 @@
+---
+title: "Tarea 3 Ejercicio 13"
+author: "Elian Gonzalez Hernandez"
+date: "7 de marzo de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Considera la Figura 5.21** 
+
+Representa las páginas A, B y C sin enlaces entrantes y con PageRank inicial = 1. Inicialmente, ninguna de las páginas enlaza a cualquier otra página y ningún enlace a ellas. Responda las siguientes preguntas y calcule el PageRank para
+cada pregunta.
+
+$\\$
+$\\$
+$\\$
+$\\$
+
+```{r}
+#Librería necesaria
+library(igraph)
+
+```
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+
+**Figura original 5.21**
+
+$\\$
+
+```{r}
+
+#Figura Original
+Y = graph(c("A","A", "B","B","C", "C"),
+directed = F)
+Y = simplify(Y)
+coordenadas = rbind(c(0,1),c(1,1),c(0.5,0))
+plot(Y, label = vertex_attr(Y)$names, layout = coordenadas, vertex.size = 50, vertex.color = "yellow")
+
+
+```
+
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+**(a) Enlace la página A a la página B.**
+
+$\\$
+
+```{r}
+
+
+#Dibujando los vínculos
+Z = graph(c("A","B", "B","B","C", "C"),
+directed = T)
+Z = simplify(Z)
+coordenadas = rbind(c(0,1),c(1,1),c(0.5,0))
+plot(Z, label = vertex_attr(Z)$names, layout = coordenadas, vertex.size = 50, vertex.color = "pink")
+
+#Calculando el page rank de Z
+page.rank(Z)$vector
+
+```
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+
+**(b) Vincular todas las páginas entre sí.**
+
+$\\$
+
+```{r}
+
+#Dibujando los vínculos
+X = graph(c("A","B", "A","C","B", "A","B","C", "C","A","C", "B"),
+directed = T)
+X = simplify(X)
+coordenadas = rbind(c(0,1),c(1,1),c(0.5,0))
+plot(X, label = vertex_attr(X)$names, layout = coordenadas, vertex.size = 50, vertex.color = "pink")
+
+#Calculando el page rank de X
+page.rank(X)$vector
+
+
+```
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+**(c) Vincule la página A con B y C, y vincule las páginas B y C con A.**
+
+$\\$
+
+```{r}
+
+
+#Dibujando los vínculos
+K = graph(c("A","B", "A","C","B","A", "C","A","C","C"),
+directed = T)
+K = simplify(K)
+coordenadas = rbind(c(0,1),c(1,1),c(0.5,0))
+plot(K, label = vertex_attr(K)$names, layout = coordenadas, vertex.size = 50, vertex.color = "pink")
+
+#Calculando el page rank de K
+page.rank(K)$vector
+
+
+```
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+**(d) Utilice los enlaces anteriores y agregue un enlace de la página C a la página B.**
+
+$\\$
+
+```{r}
+
+
+#Dibujando los vínculos
+M = graph(c("A","B", "A","C","B","A", "C","A","C","C","C","B"),
+directed = T)
+M = simplify(M)
+coordenadas = rbind(c(0,1),c(1,1),c(0.5,0))
+plot(M, label = vertex_attr(M)$names, layout = coordenadas, vertex.size = 50, vertex.color = "pink")
+
+
+#Calculando el page rank de M
+page.rank(M)$vector
+
+```
+

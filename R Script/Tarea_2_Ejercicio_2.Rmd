@@ -1,0 +1,30 @@
+---
+title: "Tarea 2 Ejercicio 2"
+author: "Elián González Hernández"
+date: "26 de febrero de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Ejercicio 2**
+
+Many algorithms, such as k-means clustering (see Chapter 8),
+rely on the Euclidean distance function between vectors:
+$u=(u_1, u_2, . . . , u_n)$ and $v = (v_1, v_2, . . . , v_n)$:
+
+$d(u,v) = d(v,u)=\sqrt{(v_1-u_1)^2+(v_2-u_2)^2 ... +(v_n-u_n)^2}$
+
+**Demostración matemática**
+
+$d(u,v)=d(v,u)=\sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 ... + (v_n-u_n)^2}$
+
+$d(u,v)=d(v,u)=\sqrt{v_1^2+u_1^2 - 2v_1u_1 + v_2^2+u_2^2 - 2v_2u_2 ... + v_n^2+u_n^2-2v_nu_n}$
+
+$d(u,v)=d(v,u)=\sqrt{(v_1^2+v_2^2...+v_n^2)+(u_1^2+u_2^2...+u_n^2)-2(v_1u_1+v_2u_2...+v_nu_n)}$
+
+$d(u,v)=d(v,u)=\sqrt{<v,v>+<u,u>-2<v,u>}$
+
+

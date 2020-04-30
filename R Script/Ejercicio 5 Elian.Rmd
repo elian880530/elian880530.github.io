@@ -1,0 +1,44 @@
+---
+title: "Redes 5"
+author: "Elian Gonzalez Hernandez"
+date: "14 de noviembre de 2017"
+output: html_document
+---
+
+## * 1) Se ha observado en muchas redes una asociación entre "centralidad" y "letalidad", definida como la desconexión fatal de la red cuando se eliminan nodos. Estudiemos esta asociación en una red no dirigida que describe un viejo mapa de Internet a nivel del sistema autónomo. Los enlaces en esta red están contenidos en el archivo AS-19971108.dat. Descárguelo en su computadora y cárguelo en R como un marco de datos. Defina un gráfico no dirigido con esta lista de bordes. *
+
+### * a) Calcule sus índices básicos: orden, tamaño, densidad, número de componentes conectados, diámetro, transitividad. *
+
+```{r}
+
+```
+
+
+### * b) Repita 1000 veces el procedimiento de eliminar un 0.1% aleatorio de su conjunto de nodos, y calcule el número promedio de componentes conectados de las redes resultantes y la fracción promedio de la red representada por el componente más grande. (La función 'replicar' es útil para evitar bucles for en, bueno, replicaciones). *
+
+```{r}
+replicate(G1,delete_vertices)
+```
+
+
+### * c) Ahora, calcule el número de componentes conectados y la fracción representada por el componente más grande de las redes obtenidas después de eliminar el 0.1% más central de los nodos, para los siguientes índices de centralidad (por supuesto, si el 0.1 más central % de nodos para dos índices son el mismo conjunto de nodos, no necesita perder el tiempo considerando el doble de la misma red): *
+
+####*la licenciatura*
+
+#### * conectividad *
+
+#### * decaimiento con $ \ delta = 0.5 $ *
+
+#### * betweenness *
+
+#### * eigenvector *
+
+#### * $ \ alpha $ -centrality con $ \ alpha $ alrededor de la mitad de su valor máximo sensible (use las funciones del paquete 'rARPACK' para calcular rápidamente el primer valor propio). *
+
+### * d) Repite los dos últimos puntos reemplazando 0.1% por 1%. *
+
+### * e) Comenta los resultados obtenidos. *
+
+## * 2) ¿Qué 0.5% de los nodos considera más "central" en la red de Facebook estudiada en el Folleto 4? ¿Qué tipo de centralidad (o centralidades) usas y por qué? Para su índice de centralidad o índices, ¿los nodos centrales más cercanos al 0.5% contienen buenos candidatos para ser los usuarios alrededor de los cuales se construyó la red? ¿Qué candidatos? *
+
+## * 3) ¿Qué fracción de personas en la red de Facebook estudiada en el Documento 4 tiene un número de amigos menor que el número promedio de amigos de sus amigos? ¿Y qué fracción de individuos en esa red tienen menos amigos que todos sus amigos? *

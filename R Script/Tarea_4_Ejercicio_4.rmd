@@ -1,0 +1,140 @@
+---
+title: "Tarea_4_Ejercicio4"
+author: "Elian Gonzalez Hernandez"
+date: "12 de marzo de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**a) Describe how the shared nearest neighbor algorithm groups vertices.**
+
+$\\$
+
+```{r}
+
+# Initialize the SNN graph G with V(G) vertices and no edges
+
+#     dado un vertice i
+# 1:  foreach i = 1 to V (G) do
+
+#     dado un vertice j
+# 2:  foreach j = i + 1 to V (G) do
+
+#     iniciamos un contador en 0
+# 3:  counter = 0
+
+#     para un vertice m que sea diferente de i e j
+# 4:  foreach m = 1 to V (G) do
+
+#     Condición: si el vértice i y el vértice j ambos tienen una arista con vértice m
+# 5:  if vertex i and vertex j both have an edge with vertex m
+
+#     Entonces: si se cumple la anterior condición se cuenta 1
+# 6:  then
+# 7:  counter = counter + 1
+# 8:  end
+
+#     Condición: si se cumple la condición de contador mayor o igual que k
+# 9:  if counter >= k then
+
+#     Entonces: conecte una arista entre el vértice i y el vértice j en G
+# 10: Connect an edge between vertex i and vertex j in G
+# 11: end
+# 12: end
+# 13: return G
+
+```
+
+$\\$
+$\\$
+$\\$
+$\\$
+
+**b) Based on your answer to part a, how many total nodes are required at minimum to find a pair of nodes with n shared nearest neighbors? Explain your answer.**
+
+Como mínimo necesitaría n + 2 nodos.Esto es debido a que si queremos n nodos vecinos en común necesitamos una pareja de nodos (2 nodos) que tengan enlaces a estos vecinos.
+
+$\\$
+$\\$
+$\\$
+$\\$
+
+**c) Given the list of vertices with x and y coordinates shown below, construct an adjacency matrix of the vertices,where vertices are considered to be neighbors (adjacent) if they are within a distance of 4, using Euclidean distance. Note, the vertices should not be considered adjacent to themselves.**
+
+$\\$
+$\\$
+$\\$
+
+```{r}
+
+V = rbind(c(1,2),c(4,6),c(4,4),c(5,4),c(2,6),c(9,3),c(4,1),c(7,1),c(2,7),c(8,5))
+rownames(V) = c("A","B","C","D","E","F","G","H","I","J")
+colnames(V) = c("x","y")
+A = matrix(0, nrow = 10, ncol = 10 )
+rownames(A) = c("A","B","C","D","E","F","G","H","I","J")
+colnames(A) = c("A","B","C","D","E","F","G","H","I","J")
+for(idx in 1:10){
+  for(jdx in 1:10){
+    if(idx == jdx){
+      A[idx,jdx] = 0
+    }else{
+      distancia = sqrt((V[jdx,2]-V[idx,2])^2)+((V[jdx,1]-V[idx,1])^2)
+      if(distancia <= 4){
+        A[idx,jdx]=1
+      }else{
+        A[idx,jdx]=0
+      }
+    }
+  }
+}
+
+#adjacency matrix
+A
+```
+
+$\\$
+
+$\\$
+
+$\\$
+
+$\\$
+
+**d) Using the adjacency matrix that you have created, find and list all the pairs of nodes that have at least two shared neighbors in common.**
+
+```{r}
+library(igraph)
+# No pude utilizar la librería ‘ProximityMeasure’ porque no es compatible con mi versión de  R 3.4.3
+# package ‘ProximityMeasure’ is not available (for R version 3.4.3)
+# Por lo tanto mostraré el grafo y sacaré visualmente el listado de todos los pares de nodos que 
+# tienen al menos dos vecinos compartidos.
+
+plot(graph_from_adjacency_matrix(A, mode = "undirected"))
+#Los pares de nodos que tienen al menos dos vecinos compartidos son C--D y B--G
+
+```
+
+$\\$
+$\\$
+$\\$
+
+**e)  List all the pairs of nodes that have at least three shared neighbors in common.**
+
+```{r}
+
+# No pude utilizar la librería ‘ProximityMeasure’ porque no es compatible con mi versión de  R 3.4.3
+
+# package ‘ProximityMeasure’ is not available (for R version 3.4.3)
+
+# Por lo tanto mostraré el grafo y sacaré visualmente el listado de todos los pares 
+# de nodos que tienen al menos tres vecinos compartidos.
+
+plot(graph_from_adjacency_matrix(A, mode = "undirected"))
+#Este grafo no tiene pares de nodos que tengan al menos tres vecinos compartidos.
+
+
+```
+

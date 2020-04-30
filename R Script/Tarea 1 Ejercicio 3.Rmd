@@ -1,0 +1,83 @@
+---
+title: "Tarea 1 Ejercicio 3"
+author: "Elian Gonzalez Hernandez"
+date: "14 de febrero de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Ejercicio 3:
+
+En la figura 2.10, ¿los gráficos Y y Z son isomorfos? Si es así, da un isomorfismo.
+¿Son automorfos? Si es así, dado un automorfismo.
+
+```{r}
+library(igraph)
+
+#El grafo Y es de color rosa
+Y = graph(c("a", "e", "e", "c", "e", "b", "b", "d", "b", "f", "c", "f"),
+directed = F)
+
+#El grafo Z es de color naranja
+Z = graph(c("a", "b", "b", "c", "b", "e", "e", "d", "e", "f", "f", "c"),
+directed = F)
+
+plot(
+Y %du% Z,
+vertex.color = c(
+"pink",
+"pink",
+"pink",
+"pink",
+"pink",
+"pink",
+"orange",
+"orange",
+"orange",
+"orange",
+"orange",
+"orange"
+)
+)
+
+```
+
+Respuesta: 
+Estos grafos (Y,Z) no son isomorfos pero sin embargo si son automorfos. Esto se debe a que tienen la misma estructura pero sus vertices no tienen las mismas etiquetas.
+
+
+Creando un nuevo grafo que sea automorfo:
+
+```{r}
+#El grafo X es de color amarillo
+X = graph(c("b", "e", "e", "c", "e", "a", "a", "d", "a", "f", "c", "f"),
+directed = F)
+
+plot(
+Y %du% Z %du% X,
+vertex.color = c(
+"pink",
+"pink",
+"pink",
+"pink",
+"pink",
+"pink",
+"orange",
+"orange",
+"orange",
+"orange",
+"orange",
+"orange",
+"yellow",
+"yellow",
+"yellow",
+"yellow",
+"yellow",
+"yellow"
+)
+)
+```
+

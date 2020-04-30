@@ -1,0 +1,25 @@
+---
+title: "Tarea 5 Ejercicio 5"
+author: "Elian Gonzalez Hernandez"
+date: "19 de marzo de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Ejercicio 5##
+List a total of two advantages/disadvantages of using maximal clique representation while clustering.
+
+##Ventajas:##
+
+*1-* Permite a un nodo pertenecer a 2 clúster diferentes. Es decir, permite solapamiento a la hora de hacer clustering. Por ejemplo, imaginemos que tenemos una red social y queremos aplicar un algoritmo de recomendación de productos a los grupos creados. Puede existir una persona (nodo) que tenga intereses que pertenezcan a dos claster diferentes. 
+
+*2-* Permite crear clasters de un solo nodo si estos no tienen similitudes con ningún otro de la red. Por ejemplo, imaginemos el caso anterior donde exista una persona que no tenga intereses en común con ninguno del clúster obtenidos. Por lo tanto, no nos interesaría enlazar a esta persona con alguno del clúster creados. 
+
+##Desventajas:##
+
+*1-* No siempre resulta interesante hacer clustering con solapamiento. Por ejemplo, si estamos intentando hacer una red social que separa grupos por sus zonas de vivienda no tiene sentido que una persona viva en dos zonas diferentes.
+
+*2-* En el caso que queramos crear una red en la que no tengamos un clúster con un solo nodo. Por ejemplo, si quisiéramos repartir las personas que asistirán a una boda en mesas donde la gente que se sienta tenga similitudes entre ellos no nos interesa dejar a una persona en una mesa sola.
